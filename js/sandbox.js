@@ -1,13 +1,11 @@
-let profileForm = document.getElementById("profile").value;
-let nameInput = document.getElementById("name").value;
-let ageInput = document.getElementById("age").value;
-let pets = document.querySelectorAll("input[type='radio']");
-let hobby = document.querySelectorAll("input[type='checkbox']");
+let nameInput = document.getElementById("name");
+let ageInput = document.getElementById("age");
+let colorInput = document.getElementById("colorInput");
+let submitBtn = document.getElementById("submitBtn");
+let output = document.getElementById("output");
 
+submitBtn.addEventListener("click", getInfo);
 
-  function getValue() {
-            let inputField = document.getElementById("myInput");
-
-            let value = inputField.value;
-            alert("Input value: " + value);
-  }
+  function getInfo() { 
+    output.textContent = `Name: ${nameInput.value}, Age: ${ageInput.value}, Favorite Color: ${colorInput.value}';
+    }

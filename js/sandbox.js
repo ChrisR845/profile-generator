@@ -1,5 +1,5 @@
-let nameInput = document.getElementById("name");
-let ageInput = document.getElementById("age");
+let nameInput = document.getElementById("nameInput");
+let ageInput = document.getElementById("ageInput");
 let colorInput = document.getElementById("colorInput");
 let submitBtn = document.getElementById("submitBtn");
 let output = document.getElementById("output");
@@ -33,5 +33,5 @@ function getInfo(){
   }
   console.log(hobbies);
   
-  output.textContent = 'name: ${nameInput.value}, age: ${ageInput.value}, Favorite Color: ${colorInput.value}';
+  output.textContent = `name: ${nameInput.value}, age: ${ageInput.value}, Favorite Color: ${colorInput.value}`;
 }
